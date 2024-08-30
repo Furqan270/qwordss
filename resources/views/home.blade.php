@@ -13,7 +13,7 @@
     <header class="absolute inset-x-0 top-0 z-50">
       <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
         <div class="flex lg:flex-1">
-          <a href="#" class="-m-1.5 p-1.5">
+          <a href="/" class="-m-1.5 p-1.5">
             <span class="sr-only">Qwords</span>
             <img class="h-10 w-auto" src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/logo-qw-light.webp" alt="">
           </a>
@@ -33,6 +33,8 @@
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Email Suite</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
           <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Internet Access</a>
+          <a href="/promotion" class="mr-2 animate-fadeInOut text-black">🎁Promo</a>
+          
         </div>
         <div class="hidden lg:flex lg:flex-1 lg:justify-end">
           <span class="sm:ml-3">
@@ -42,7 +44,6 @@
           </span>
         </div>
       </nav>
-      <!-- Mobile menu, show/hide based on menu open state. -->
       
       </div>
     </header>

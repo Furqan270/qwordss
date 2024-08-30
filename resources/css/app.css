@@ -1,3 +1,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 1;
+        color: black; /* Warna hitam saat tidak berkedip */
+    }
+    50% {
+        opacity: 1;
+        color: orange; /* Warna oranye saat berkedip */
+    }
+}
+
+.gift-icon {
+    animation: fadeInOut 2s infinite;
+}
