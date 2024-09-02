@@ -77,7 +77,7 @@
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
-    <div class="container mx-auto py-10">
+    <div class="container mx-auto py-10 px-20">
         <div class="flex items-center gap-4"> <!-- Menggunakan gap-4 untuk mengatur jarak antar kartu -->
             <div class="card w-96 bg-base-100 shadow-xl">
                 <figure class="px-10 pt-10">
@@ -87,7 +87,7 @@
                     <h2 class="card-title">Tebus Murah Domain .BIZ.ID</h2>
                     <p>Dapatkan domain .biz.id senilai Rp 5000 setelah pembelian domain atau hosting.</p>
                     <div class="card-actions justify-end">
-                        <button class=" border-orange-500 bg-orange-600 text-orange-500 hover:bg-orange-500 hover:text-white active:bg-orange-600 active:border-orange-600 transition-colors duration-300 px-4 py-2 rounded-2xl text-white">Selengkapnya</button>
+                        <button class=" border-orange-500 bg-orange-600  hover:bg-orange-500 hover:text-white active:bg-orange-600 active:border-orange-600 transition-colors duration-300 px-4 py-2 rounded-2xl text-white">Selengkapnya</button>
                     </div>
                 </div>
             </div>
@@ -100,15 +100,17 @@
                     <h2 class="card-title">#TerimaBeres</h2>
                     <p>Modal sejutaaan udah bisa punya website? Pesan di Bikin.Website.</p>
                     <div class="card-actions justify-end">
-                        <button class="border-orange-500 bg-orange-600 text-orange-500 hover:bg-orange-500 hover:text-white active:bg-orange-600 active:border-orange-600 transition-colors duration-300 px-4 py-2 rounded-2xl text-white">Selengkapnya</button>
+                        <button class="border-orange-500 bg-orange-600 hover:bg-orange-500 hover:text-white active:bg-orange-600 active:border-orange-600 transition-colors duration-300 px-4 py-2 rounded-2xl text-white">Selengkapnya</button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
+    <x-footer></x-footer>
+
 </body>
 </html>
-
     </div>
       </div>
       

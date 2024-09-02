@@ -11,45 +11,11 @@
 <body>
   <div class="bg-white">
     <header class="absolute inset-x-0 top-0 z-50">
-      <nav class="flex items-center justify-between p-6 lg:px-8" aria-label="Global">
-        <div class="flex lg:flex-1">
-          <a href="/" class="-m-1.5 p-1.5">
-            <span class="sr-only">Qwords</span>
-            <img class="h-10 w-auto" src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/logo-qw-light.webp" alt="">
-          </a>
-        </div>
-        <div class="flex lg:hidden">
-          <button type="button" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
-            <span class="sr-only">Open main menu</span>
-            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
-            </svg>
-          </button>
-        </div>
-        <div class="hidden lg:flex lg:gap-x-12">
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Cloud Hosting</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Server</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Domain</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Email Suite</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Services</a>
-          <a href="#" class="text-sm font-semibold leading-6 text-gray-900">Internet Access</a>
-          <a href="/promotion" class="mr-2 animate-fadeInOut text-black">🎁Promo</a>
-          
-        </div>
-        <div class="hidden lg:flex lg:flex-1 lg:justify-end">
-          <span class="sm:ml-3">
-            <button type="button" class="border-2 border-orange-500 text-orange-500 bg-white hover:bg-orange-500 hover:text-white active:bg-orange-600 active:border-orange-600 transition-colors duration-300 px-4 py-2 rounded-2xl">
-            Log in
-            </button>
-          </span>
-        </div>
-      </nav>
-      
+      <x-navbar></x-navbar>
       </div>
     </header>
   
     <div class="relative isolate px-6 pt-14 lg:px-8">
-     
       <div class="mx-auto max-w-2xl py-32 sm:py-36 lg:py-46 bg-[url('https://qwords.com/v2/wp-content/themes/qwords/assets/images/shapes/webp/main-bg.webp')] ">
         <div class="text-center p-6 rounded-lg"> <!-- Background overlay -->
           <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">Cloud Hosting</h1>
@@ -59,14 +25,280 @@
           <div class="mt-10 flex items-center justify-center gap-x-6">
             <p class="text-3xl font-semibold leading-6 text-amber-600">#QwordsYourSuccess <span aria-hidden="true"></span></p>
           </div>
-          <div class="mt-10 flex items-center justify-center gap-x-6">
-            <a href="#" class="rounded-2xl bg-amber-600 px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-red-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-amber-600">Pesan Sekarang</a>
+          <div>
           </div>
         </div>
       </div>
       
       
     </div>
+    <div class="bg-white py-12">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <!-- Title -->
+          <div class="text-center">
+              <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+                  Cloud Hosting Indonesia <span class="text-orange-500">Diskon Hingga 50%</span>
+              </h2>
+              <p class="mt-4 text-lg leading-6 text-gray-600">
+                  Layanan cloud hosting indonesia terbaik dengan teknologi andal untuk website anda
+              </p>
+          </div>
+  
+          <!-- Cards -->
+          <div class="mt-10 grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-4">
+              <!-- Card 1 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                  <h3 class="text-lg font-semibold text-gray-900">Value Cloud Hosting</h3>
+                  <p class="mt-1 text-sm text-gray-500">VCH1</p>
+                  <p class="text-sm line-through text-gray-500">Rp 24.500</p>
+                  <p class="text-2xl font-bold text-orange-500">Rp 14.500</p>
+                  <div class="mt-4 text-sm text-gray-600">
+                    <div class="flex items-start mb-2">
+                      <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/disk.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                      <div class="flex flex-col">
+                          <p class="text-base leading-tight">Disk</p>
+                          <p class="text-base leading-tight font-bold">3 GB</p>
+                      </div>
+                  </div>
+                  <div class="flex items-start mb-5">
+                    <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/bandwidth.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                    <div class="flex flex-col">
+                        <p class="text-base leading-tight">Bandwith</p>
+                        <p class="text-base leading-tight font-bold">Unlimited</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-5">
+                  <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/cpu.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                  <div class="flex flex-col">
+                      <p class="text-base leading-tight">Core CPU</p>
+                      <p class="text-base leading-tight font-bold">0.5 Core</p>
+                  </div>
+              </div>
+              <div class="flex items-start">
+                <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/addon.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                <div class="flex flex-col">
+                    <p class="text-base leading-tight">Add on / parked domain</p>
+                    <p class="text-base leading-tight font-bold">No</p>
+                </div>
+                  </div>
+                  </div>
+                  <button class="mt-6 w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">
+                      Pesan Sekarang
+                  </button>
+              </div>
+  
+              <!-- Card 2 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                  <h3 class="text-lg font-semibold text-gray-900">Unlimited Hosting</h3>
+                  <p class="mt-1 text-sm text-gray-500">Signature</p>
+                  <p class="text-sm line-through text-gray-500">Rp 109.000</p>
+                  <p class="text-2xl font-bold text-orange-500">Rp 89.900</p>
+                  <div class="mt-4 text-sm text-gray-600">
+                    <div class="flex items-start mb-2">
+                      <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/disk.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                      <div class="flex flex-col">
+                          <p class="text-base leading-tight">Disk</p>
+                          <p class="text-base leading-tight font-bold">Unlimited</p>
+                      </div>
+                  </div>
+                  <div class="flex items-start mb-5">
+                    <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/bandwidth.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                    <div class="flex flex-col">
+                        <p class="text-base leading-tight">Bandwith</p>
+                        <p class="text-base leading-tight font-bold">Unlimited</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-5">
+                  <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/cpu.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                  <div class="flex flex-col">
+                      <p class="text-base leading-tight">Core CPU</p>
+                      <p class="text-base leading-tight font-bold">0.5 Core</p>
+                  </div>
+              </div>
+              <div class="flex items-start">
+                <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/addon.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                <div class="flex flex-col">
+                    <p class="text-base leading-tight">Add on / parked domain</p>
+                    <p class="text-base leading-tight font-bold">5/5</p>
+                </div>
+                  </div>
+                  </div>
+                  <button class="mt-6 w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">
+                      Pesan Sekarang
+                  </button>
+              </div>
+  
+              <!-- Card 3 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                  <h3 class="text-lg font-semibold text-gray-900">High Performance</h3>
+                  <p class="mt-1 text-sm text-gray-500">HPCH Bisnis 1</p>
+                  <p class="text-sm line-through text-gray-500">Rp 90.000</p>
+                  <p class="text-2xl font-bold text-orange-500">Rp 79.000</p>
+                  <div class="mt-4 text-sm text-gray-600">
+                  <div class="d-flex align-items-center mt-3">
+                    <div class="mt-4 text-sm text-gray-600 space-y-2">
+                    <div class="flex items-start mb-2">
+                      <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/disk.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                      <div class="flex flex-col">
+                          <p class="text-base leading-tight">Disk</p>
+                          <p class="text-base leading-tight font-bold">3 GB</p>
+                      </div>
+                  </div>
+                  <div class="flex items-start mb-5">
+                    <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/bandwidth.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                    <div class="flex flex-col">
+                        <p class="text-base leading-tight">Bandwith</p>
+                        <p class="text-base leading-tight font-bold">Unlimited</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-5">
+                  <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/cpu.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                  <div class="flex flex-col">
+                      <p class="text-base leading-tight">Core CPU</p>
+                      <p class="text-base leading-tight font-bold">0.5 Core</p>
+                  </div>
+              </div>
+              <div class="flex items-start">
+                <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/addon.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                <div class="flex flex-col">
+                    <p class="text-base leading-tight">Add on / parked domain</p>
+                    <p class="text-base leading-tight font-bold">-</p>
+                </div>
+                  </div>
+            
+                    
+                    
+                    </div>
+
+                  </div>
+                  </div>
+                  <button class="mt-6 w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">
+                      Pesan Sekarang
+                  </button>
+              </div>
+  
+              <!-- Card 4 -->
+              <div class="bg-white shadow-lg rounded-lg p-6">
+                  <h3 class="text-lg font-semibold text-gray-900">Cloud VPS KVM SSD</h3>
+                  <p class="mt-1 text-sm text-gray-500">VPS SC1</p>
+                  <p class="text-sm line-through text-gray-500">Rp 135.000</p>
+                  <p class="text-2xl font-bold text-orange-500">Rp 75.000</p>
+                  <div class="mt-4 text-sm text-gray-600">
+                    <div class="flex items-start mb-2">
+                      <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/disk.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                      <div class="flex flex-col">
+                          <p class="text-base leading-tight">Disk</p>
+                          <p class="text-base leading-tight font-bold">25 GB</p>
+                      </div>
+                  </div>
+                  <div class="flex items-start mb-5">
+                    <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/bandwidth.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                    <div class="flex flex-col">
+                        <p class="text-base leading-tight">Bandwith</p>
+                        <p class="text-base leading-tight font-bold">Unlimited</p>
+                    </div>
+                </div>
+                <div class="flex items-start mb-5">
+                  <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/cpu.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                  <div class="flex flex-col">
+                      <p class="text-base leading-tight">Core CPU</p>
+                      <p class="text-base leading-tight font-bold">1 Core</p>
+                  </div>
+              </div>
+              <div class="flex items-start">
+                <img src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/icons/new-icon/smallicons/addon.webp" alt="Disk Icon" class="h-8.5 w-10 mr-3">
+                <div class="flex flex-col">
+                    <p class="text-base leading-tight">Add on / parked domain</p>
+                    <p class="text-base leading-tight font-bold">Unlimited</p>
+                </div>
+                  </div>
+                  </div>
+                  <button class="mt-6 w-full bg-orange-500 text-white py-2 rounded-md hover:bg-orange-600">
+                      Pesan Sekarang
+                  </button>
+              </div>
+          </div>
+      </div>
+      <div class="w-full h-screen bg-white dark:bg-gray-800 mt-10">
+        <div class="text-center">
+          <h2 class="text-3xl font-extrabold text-gray-900 sm:text-4xl">
+              Apa Kata  <span class="text-orange-500">Mereka?</span>
+          </h2>
+          <p class="mt-4 text-lg leading-6 text-gray-600">
+            Apa kata mereka yang sudah menggunakan layanan web hosting Indonesia dari Qwords? Simak pengalaman mereka yang telah membuktikan sendiri fitur dari layanan kami.
+          </p>
+      </div>
+        <div class="w-full h-full py-10 flex flex-wrap justify-center items-center gap-4">
+            <div class="w-full sm:w-[18rem] md:w-[20rem] flex flex-col gap-2 px-4 border border-gray-300 rounded-lg bg-white dark:bg-gray-900 shadow-lg">
+                <div class="w-full flex justify-center items-center">
+                    <img class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-16 sm:-top-20" src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/photos/testi1.webp" alt="Profile Image" />
+                </div>
+    
+                <div class="w-full text-center flex flex-col gap-4 relative -top-12 sm:-top-16">
+                    <h1 class="uppercase text-lg font-semibold dark:text-white">
+                      Founder ID Cert
+                    </h1>
+    
+                    <h2 class="text-lg sm:text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+                        Budi Raharjo
+                    </h2>
+    
+                    <p class="text-gray-700 dark:text-gray-300">
+                      Semoga Qwords dapat terus bertahan, sehingga kami dan masyarakat Indonesia bisa mendapatkan layanan yang terbaik dari Qwords.
+                    </p>
+    
+                    <a href="https://www.youtube.com/watch?v=q2bJogin3eE" class="w-[60%] mx-auto bg-orange-600 text-white rounded-3xl px-4 py-2">Lihat Selengkapnya</a>
+                </div>
+            </div>
+    
+            <div class="w-full sm:w-[18rem] md:w-[20rem] flex flex-col gap-2 px-4 border border-gray-300 rounded-lg bg-white dark:bg-gray-900 shadow-lg">
+                <div class="w-full flex justify-center items-center">
+                    <img class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-16 sm:-top-20" src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/photos/testi2.webp" alt="Profile Image" />
+                </div>
+    
+                <div class="w-full text-center flex flex-col gap-4 relative -top-12 sm:-top-16">
+                    <h1 class="uppercase text-lg font-semibold dark:text-white">
+                      PR Event Info BDG
+                    </h1>
+    
+                    <h2 class="text-lg sm:text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+                        Kuns Kurniawan
+                    </h2>
+    
+                    <p class="text-gray-700 dark:text-gray-300">
+                      Pelayanan Qwords sangat cepat dan responsif, sehingga tidak butuh waktu lama untuk membantu website kami kembali normal. Terbaik pokoknya, mah!
+                    </p>
+    
+                    <a href="https://www.youtube.com/watch?v=f15zt4C2e4A&feature=youtu.be" class="w-[60%] mx-auto bg-orange-600 text-white rounded-3xl px-4 py-2">Lihat Selengkapnya</a>
+                </div>
+            </div>
+    
+            <div class="w-full sm:w-[18rem] md:w-[20rem] flex flex-col gap-2 px-4 border border-gray-300 rounded-lg bg-white dark:bg-gray-900 shadow-lg">
+                <div class="w-full flex justify-center items-center">
+                    <img class="w-[6rem] h-[6rem] sm:w-[8rem] sm:h-[8rem] rounded-full outline outline-offset-2 outline-1 outline-blue-400 shadow-lg relative -top-16 sm:-top-20" src="https://qwords.com/v2/wp-content/themes/qwords/assets/images/photos/testi3.webp" alt="Profile Image" />
+                </div>
+    
+                <div class="w-full text-center flex flex-col gap-4 relative -top-12 sm:-top-16">
+                    <h1 class="uppercase text-lg font-semibold dark:text-white">
+                      Owner Rumah Kopi temanggung
+                    </h1>
+    
+                    <h2 class="text-lg sm:text-xl font-serif capitalize font-semibold text-gray-700 dark:text-gray-300">
+                        Denden Sofiudin
+                    </h2>
+    
+                    <p class="text-gray-700 dark:text-gray-300">
+                      Hingga saat ini pula, kami tidak pernah menemukan masalah yang berarti dari layanan yang diberikan Qwords. Layanan Customer Service yang sangat baik, membuat kami tidak ingin berpindah dari Qwords.
+                    </p>
+    
+                    <a href="https://www.youtube.com/watch?v=ftJMF63RznM&feature=youtu.be" class="w-[60%] mx-auto bg-orange-600 text-white rounded-3xl px-4 py-2">Lihat Selengkapnya</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <x-footer></x-footer>
+  </div>
+  
   </div>
 </body>
 </html>
